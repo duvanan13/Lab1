@@ -64,8 +64,8 @@ all: main-build
 main-build: ex6.elf secondary-outputs
 
 # Tool invocations
-ex6.elf: $(OBJS) $(USER_OBJS) C:\Users\duvan\STM32CubeIDE\workspace_1.7.0\ex6\STM32F103C6UX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "ex6.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\duvan\STM32CubeIDE\workspace_1.7.0\ex6\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ex6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+ex6.elf: $(OBJS) $(USER_OBJS) D:\Vi\ xu\ ly\github\Lab1\ex6+7+8+9+10\STM32IDE\STM32F103C6UX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "ex6.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Vi xu ly\github\Lab1\ex6+7+8+9+10\STM32IDE\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ex6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
